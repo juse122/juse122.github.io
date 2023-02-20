@@ -1,0 +1,133 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  color: #fff;
+}
+
+a {
+  cursor: pointer;
+}
+
+.page-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carina-nebula-jets.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.content-wrapper, .header-wrapper, .header-avatar-wrapper, .main-wrapper, .main-list, .footer-wrapper, .footer-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 100vw;
+  max-width: 36rem;
+  height: 100%;
+  min-height: 100vh;
+  gap: 5rem;
+  padding: 3rem;
+}
+
+.header-wrapper {
+  gap: 1rem;
+}
+
+.header-avatar-wrapper {
+  flex-flow: row nowrap;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.header-avatar-wrapper .header-avatar {
+  width: 8rem;
+  height: 8rem;
+}
+
+.header-head {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.header-sub {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.main-list {
+  list-style: none;
+  gap: 1rem;
+}
+.main-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-list li a {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1rem;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+}
+
+.footer-list {
+  flex-flow: row nowrap;
+  list-style: none;
+  gap: 1.5rem;
+}
+.footer-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list a {
+  padding: 1rem;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    font-size: 75%;
+  }
+}
+@media screen and (min-width: 600px) {
+  :root {
+    font-size: 87.5%;
+  }
+}
+@media screen and (min-width: 800px) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
