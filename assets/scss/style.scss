@@ -14,6 +14,12 @@
 }
 
 body {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/carina-nebula-jets.png);
+    // background-image: url(../img/carina-nebula-jets.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     font-family: var(--font);
     color: #fff;
 }
@@ -27,12 +33,7 @@ a {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    // width: 100vw;
-    // height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carina-nebula-jets.png);
-    // background-image: url(../img/carina-nebula-jets.png);
-    background-size: cover;
-    background-position: right;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .content-wrapper, .header-wrapper, .header-avatar-wrapper, .main-wrapper, .main-list, .footer-wrapper, .footer-list {
@@ -43,7 +44,7 @@ a {
 }
 
 .content-wrapper {
-    width: calc(100vw);
+    width: 100%;
     max-width: 36rem;
     height: 100%;
     min-height: 100vh;
