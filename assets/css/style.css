@@ -81,7 +81,7 @@ a {
 }
 
 .main-wrapper {
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .main-list {
@@ -94,7 +94,7 @@ a {
   align-items: center;
 }
 .main-list li a {
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   font-weight: 500;
   line-height: 1;
   padding: 1rem;
@@ -193,7 +193,7 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
   width: calc(100vw - 8rem);
-  max-width: 34rem;
+  max-width: 32rem;
   gap: 1rem;
 }
 
@@ -250,7 +250,7 @@ a {
 }
 
 .qa {
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .about-q-and-a {
@@ -334,7 +334,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.04rem;
   padding: 1.5rem;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.0666666667);
