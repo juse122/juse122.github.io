@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#22272e" />
-    <meta name="msapplication-navbutton-color" content="#22272e">
+    <meta name="theme-color" content="#2d333b" />
+    <meta name="msapplication-navbutton-color" content="#2d333b">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <meta name="description" content="Welcome to juse122's Portfolio Page" />
+    <meta name="description" content="Hello, I'm juse122, a software developer from Berlin." />
     <meta name="author" content="juse122" />
-    <title>Contact || juse122</title>
+    <title>Contact - juse122</title>
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,40 +21,47 @@
 
 <body>
 
-    <div class="page-container">
-        <div class="content-wrapper">
+    <div class="page-container subpages-wrapper">
+        <div class="content-wrapper subpages-wrapper">
 
             <header class="header">
+                <nav class="nav-wrapper">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
                 <section class="header-wrapper">
-                    <div class="header-avatar-wrapper">
-                        <img class="header-avatar" src="assets/img/sloth.png" alt="sloth" />
-                    </div>
-                    <h1 class="header-head">juse122</h1>
-                    <h2 class="header-sub">Welcome to my portfolio page!</h2>
+                    <h1 class="headline-head">Contact</h1>
+                    <h2 class="headline-sub">Got a question? Send me a message!</h2>
                 </section>
             </header>
 
             <main class="main">
                 <section class="main-wrapper">
-                    <ul class="main-list">
-                        <li><a href="/projects">Projects</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
+                    <div class="main-contact-wrapper">
+                        <article class="main-contact">
+                            <form class="main-contact-form" action="" method="post">
+                                <label class="block label" for="name">Full name</label>
+                                <input class="block input" type="text" name="name" id="name" placeholder="Jane Doe" required>
+                                <label class="block label" for="email">Email</label>
+                                <input class="block input" type="email" name="email" id="email" placeholder="jane.doe@gmail.com" required>
+                                <label class="block label" for="textarea">Message</label>
+                                <textarea class="block input textarea" name="textarea" id="textarea" rows="8" placeholder="I am groot!" required></textarea>
+                                <input class="submit" type="submit" value="Send message">
+                            </form>
+                        </article>
+                    </div>
                 </section>
             </main>
 
             <footer class="footer">
                 <section class="footer-wrapper">
-                    <ul class="footer-list">
-                        <li><a href="https://github.com/juse122" target="_blank"><i
-                                    class="fa-brands fa-github fa-3x"></i></a></li>
-                        <li><a href="mailto:juse122de@gmail.com"><i class="fa-solid fa-envelope fa-3x"></i></a></li>
-                    </ul>
+                    <a href="#" class="footer-btt"><i class="fa-solid fa-caret-up fa-lg"></i><span>Back to top</span></a>
                 </section>
             </footer>
-
-            <div class="testbox"></div>
 
         </div>
     </div>
