@@ -332,10 +332,9 @@ a {
 
 .submit-wrapper {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 .submit {
@@ -353,17 +352,6 @@ a {
 ::placeholder {
   color: #aab9c8;
   opacity: 1;
-}
-
-#example1 {
-  height: 7.6rem;
-}
-
-@media (min-width: 430px) {
-  .submit-wrapper {
-    flex-flow: row-reverse nowrap;
-    justify-content: space-between;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#2d333b" />
-    <meta name="msapplication-navbutton-color" content="#2d333b">
+    <meta name="theme-color" content="#001e3c" />
+    <meta name="msapplication-navbutton-color" content="#001e3c">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -16,19 +16,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script type="text/javascript">
-        var verifyCallback = function (response) {
-            alert(response);
-        };
-        var widgetId1;
-        var onloadCallback = function () {
-            widgetId1 = grecaptcha.render('example1', {
-                'sitekey': '6LeTTagkAAAAAEbD102-7L5891Z8MEJB9DA85kxx',
-                'theme': 'light',
-                'size': 'compact'
-            });
-        };
-    </script>
+    <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -63,7 +51,6 @@
                                 <label class="block label" for="textarea">Message</label>
                                 <textarea class="block input textarea" name="message" id="textarea" rows="8" placeholder="I am groot!" required></textarea>
                                 <div class="submit-wrapper">
-                                    <div id="example1"></div>
                                     <input class="submit" type="submit" value="Send">
                                 </div>
                             </form>
@@ -80,9 +67,6 @@
 
         </div>
     </div>
-
-    <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
 </body>
 
