@@ -16,7 +16,19 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var verifyCallback = function (response) {
+            alert(response);
+        };
+        var widgetId1;
+        var onloadCallback = function () {
+            widgetId1 = grecaptcha.render('example1', {
+                'sitekey': '6LeTTagkAAAAAEbD102-7L5891Z8MEJB9DA85kxx',
+                'theme': 'light',
+                'size': 'compact'
+            });
+        };
+    </script>
 </head>
 
 <body>
@@ -50,7 +62,10 @@
                                 <input class="block input" type="email" name="email" id="email" placeholder="jane.doe@gmail.com" required>
                                 <label class="block label" for="textarea">Message</label>
                                 <textarea class="block input textarea" name="message" id="textarea" rows="8" placeholder="I am groot!" required></textarea>
-                                <input class="submit" type="submit" value="Send message">
+                                <div class="submit-wrapper">
+                                    <div id="example1"></div>
+                                    <input class="submit" type="submit" value="Send">
+                                </div>
                             </form>
                         </article>
                     </div>
@@ -65,6 +80,9 @@
 
         </div>
     </div>
+
+    <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
 </body>
 
