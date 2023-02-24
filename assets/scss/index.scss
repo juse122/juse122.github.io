@@ -1,22 +1,18 @@
 @use "default";
 
-.page-container, .content-wrapper, .header-wrapper, .header-avatar-wrapper, .main-wrapper, .main-list, .footer-wrapper, .footer-list, .footer-btt {
+.index-wrapper, .header-wrapper, .header-avatar-wrapper, .main-wrapper, .main-list, .social-wrapper, .social-list, .footer-btt {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.page-container {
-    height: 100%;
-    min-height: 100%;
-}
-
-.content-wrapper {
+.index-wrapper {
+    gap: 4rem;
     width: 100%;
-    height: 100%;
-    max-height: 54rem;
-    justify-content: space-evenly;
+    height: calc(100% - (4.2rem + env(safe-area-inset-bottom)));
+    // max-height: 54rem;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left);
 }
 
 .header-wrapper {
@@ -73,7 +69,7 @@
     }
 }
 
-.footer-list {
+.social-list {
     flex-flow: row nowrap;
     gap: 1rem;
 
@@ -101,13 +97,8 @@
 }
 
 @media (orientation: landscape) {
-    
-    .page-container {
-        height: unset;
-        padding-bottom: env(safe-area-inset-bottom);
-    }
 
-    .content-wrapper {
+    .index-wrapper, .content-wrapper {
         flex-flow: row nowrap;
         justify-content: center;
         gap: 6rem;
