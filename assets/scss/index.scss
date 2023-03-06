@@ -59,7 +59,7 @@
             line-height: 4.7rem;
 
             &:hover {
-                border-bottom: 0.2rem solid #fff;
+                border-bottom: 0.2rem solid var(--primary-text);
             }
         }
     }
@@ -75,7 +75,7 @@
         margin: 0 0.7rem;
         
         &:hover {
-            border-bottom: 0.2rem solid #fff;
+            border-bottom: 0.2rem solid var(--primary-text);
         }
 
         a {

@@ -7,8 +7,6 @@
 
 ---
 
-<br />
-
 ## HTML
 ```
 element =
@@ -29,9 +27,7 @@ element =
 ruleset =
 ----------
 selector {
-    property: property value;
-    
-    --> = declaration
+    property: property value;   || (= declaration)
 }
 
 
@@ -51,13 +47,26 @@ selector {
 
 <br />
 
+#### Attribute selector types
+| Format | Description |
+|:-|:-|
+| [attr] | Represents elements with an attribute name of attr. |
+| [attr=value] | Represents elements with an attribute name of attr whose value is exactly value. |
+| [attr~=value] | Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value. |
+| [attr\|=value] | Represents elements with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). |
+| [attr^=value] | Represents elements with an attribute name of attr whose value is prefixed (preceded) by value. |
+| [attr$=value] | Represents elements with an attribute name of attr whose value is suffixed (followed) by value. |
+| [attr*=value] | Represents elements with an attribute name of attr whose value contains at least one occurrence of value within the string. |
+
+<br />
+
 #### Combinator types
 | Combinator name | Format | Description |
 |:-|:-|:-|
-| Adjacent sibling combinator | selector + selector | Matches the second element only if it immediately follows the first element, and both are children of the same parent element. |
-| Child combinator | selector > selector | Matches only those elements matched by the second selector that are the direct children of elements matched by the first. |
-| Descendant combinator | selector selector | Elements matched by the second selector are selected if they have an ancestor element matching the first selector. |
-| General sibling combinator | selector ~ selector | Matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element. |
+| Adjacent sibling combinator | selector&#160;+&#160;selector | Matches the second element only if it immediately follows the first element, and both are children of the same parent element. |
+| Child combinator | selector&#160;>&#160;selector | Matches only those elements matched by the second selector that are the direct children of elements matched by the first. |
+| Descendant combinator | selector&#160;selector | Elements matched by the second selector are selected if they have an ancestor element matching the first selector. |
+| General sibling combinator | selector&#160;~&#160;selector | Matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element. |
 
 <br />
 
