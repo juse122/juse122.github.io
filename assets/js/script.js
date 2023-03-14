@@ -5,9 +5,9 @@ darkModeButton.addEventListener("click", () => {
     const metaTag = document.querySelector("meta[name=theme-color]");
     const currentColor = metaTag.getAttribute("content");
 
-    if (currentColor === "#92ddff") {
-        metaTag.setAttribute("content", "#001e3c");
+    if (currentColor === "#5ac8ff") {
+        metaTag.setAttribute("content", "#003c78");
     } else {
-        metaTag.setAttribute("content", "#92ddff");
+        metaTag.setAttribute("content", "#5ac8ff");
     }
 });
