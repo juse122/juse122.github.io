@@ -9,7 +9,8 @@
 }
 
 :root {
-  --primary-bg: linear-gradient(-15deg, #6432c8, #5a78ff 30%, #5ac8ff 90%);
+  --primary-bg: linear-gradient(-10deg, #6432c8, #5a78ff 30%, #5ac8ff 85%);
+  --primary-bg-fallback: #5ac8ff;
   --secondary-bg: #fff1;
   --primary-text: #fff;
   --secondary-text: #fff5;
@@ -22,7 +23,8 @@
 }
 
 .dark-mode {
-  --primary-bg: linear-gradient(-15deg, #001e3c 10%, #003c78 90%);
+  --primary-bg: linear-gradient(-10deg, #001e3c 10%, #003c78 85%);
+  --primary-bg-fallback: #003c78;
   --secondary-bg: #fff1;
   --primary-text: #fff;
   --secondary-text: #fff5;
@@ -37,8 +39,9 @@ html, body {
 }
 
 body {
-  color: var(--primary-text);
+  background-color: var(--primary-bg-fallback);
   background: var(--primary-bg);
+  color: var(--primary-text);
 }
 
 a {
