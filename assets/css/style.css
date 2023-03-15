@@ -9,29 +9,26 @@
 }
 
 :root {
-  --primary-bg: linear-gradient(-10deg, #6432c8, #5a78ff 30%, #5ac8ff 85%);
-  --primary-bg-fallback: #5ac8ff;
-  --secondary-bg: #fff1;
-  --primary-text: #fff;
-  --secondary-text: #fff5;
-  --dark-mode-light: #fff;
-  --dark-mode-dark: #fff5;
-  --dark-mode-bg: #fff2;
+  --primary-bg: #afc6ff;
+  --secondary-bg: #fff3;
+  --primary-text: #003264;
+  --secondary-text: #fff;
+  --dark-mode-light: #003264;
+  --dark-mode-dark: #00326433;
+  --dark-mode-bg: #afc6ff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
   font-size: 62.5%;
   line-height: 1;
 }
 
 .dark-mode {
-  --primary-bg: linear-gradient(-10deg, #001e3c 10%, #003c78 85%);
-  --primary-bg-fallback: #003c78;
+  --primary-bg: #003264;
   --secondary-bg: #fff1;
-  --primary-text: #fff;
-  --secondary-text: #fff5;
-  --dark-mode-light: #fff5;
-  --dark-mode-dark: #fff;
-  --dark-mode-bg: #001e3c;
-  background-color: #003c78;
+  --primary-text: #afc6ff;
+  --secondary-text: #fff;
+  --dark-mode-light: #afc6ff33;
+  --dark-mode-dark: #afc6ff;
+  --dark-mode-bg: #003264;
 }
 
 html, body {
@@ -40,7 +37,7 @@ html, body {
 }
 
 body {
-  background-color: #5ac8ff;
+  background-color: var(--primary-bg);
   color: var(--primary-text);
 }
 
@@ -136,11 +133,11 @@ ul {
   transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 .footer-darkmode-switch:checked {
-  background-color: #fff;
+  background-color: #afc6ff;
   transform: translateX(100%) rotate(5deg);
 }
 .footer-darkmode-switch:checked::before {
-  background-color: #001e3c;
+  background-color: #003264;
   transform: translateX(100%) rotate(50deg);
 }
 
