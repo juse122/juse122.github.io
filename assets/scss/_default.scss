@@ -32,6 +32,9 @@
     --dark-mode-light: #fff5;
     --dark-mode-dark: #fff;
     --dark-mode-bg: #001e3c;
+
+    background-color: #003c78;
+    background: var(--primary-bg);
 }
 
 html, body {
@@ -40,7 +43,7 @@ html, body {
 }
 
 body {
-    background-color: var(--primary-bg-fallback);
+    background-color: #5ac8ff;
     background: var(--primary-bg);
     color: var(--primary-text);
 }
