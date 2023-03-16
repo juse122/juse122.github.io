@@ -52,19 +52,69 @@ ul {
     list-style: none;
 }
 
-.page-container {
+.index-page-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     height: 100%;
-    min-height: 100%;
 }
 
 @media (orientation: landscape) and (max-height: 450px) {
-    .page-container {
+    .index-page-container {
         padding-top: 0.1rem;
     }
+}
+
+.subpage-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.subpage-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpage-header-wrapper {
+    gap: 1rem;
+}
+
+.subpage-nav-wrapper {
+    width: 100%;
+}
+
+.subpage-nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+    li {
+        padding: 1rem;
+
+        a {
+            display: inline-block;
+            padding: 0.6rem 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    }
+}
+
+.active {
+    border-bottom: 0.3rem solid var(--primary-text);
+}
+
+.subpage-main-wrapper {
+    min-height: 100%;
 }
 
 .footer-wrapper {
