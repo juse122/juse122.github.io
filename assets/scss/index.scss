@@ -1,5 +1,19 @@
 @use "default";
 
+.index-page-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (orientation: landscape) and (max-height: 450px) {
+    .index-page-container {
+        padding-top: 0.1rem;
+    }
+}
+
 .index-wrapper, .index-header-wrapper, .index-header-avatar-wrapper, .index-main-wrapper, .index-main-list, .index-main-list > li, .index-social-wrapper, .index-social-list, .index-social-list > li > a {
     display: flex;
     flex-flow: column nowrap;
