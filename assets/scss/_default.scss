@@ -52,15 +52,10 @@ ul {
     list-style: none;
 }
 
-.subpage-container {
+.subpage-container, .subpage-wrapper, .subpage-nav-list, .subpage-main-wrapper, .footer-wrapper, .footer-btt-button > a, .footer-darkmode-wrapper, .footer-darkmode-button {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-}
-
-.subpage-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -69,9 +64,7 @@ ul {
 }
 
 .subpage-nav-list {
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     gap: 0.5rem;
 
     li {
@@ -89,14 +82,12 @@ ul {
 }
 
 .active {
-    border-bottom: 0.3rem solid var(--primary-text);
+    border-bottom: 0.2rem solid var(--primary-text);
 }
 
 .subpage-main-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
     gap: 5rem;
-    padding: 0 env(safe-area-inset-right) 5rem env(safe-area-inset-left);
+    padding: 0 env(safe-area-inset-right) 7rem env(safe-area-inset-left);
 }
 
 .subpage-main-header {
@@ -107,10 +98,7 @@ ul {
 
 .footer-wrapper {
     position: relative;
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     background-color: var(--secondary-bg);
     padding-bottom: env(safe-area-inset-bottom);
@@ -129,10 +117,7 @@ ul {
     right: calc(1rem + env(safe-area-inset-right));
 
     a {
-        display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
         width: 4.2rem;
         height: 4.2rem;
         background-color: var(--secondary-bg);
@@ -141,13 +126,12 @@ ul {
     }
 }
 
+
+
 // Dark Mode Button
 
 .footer-darkmode-wrapper {
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -161,9 +145,7 @@ ul {
 
 .footer-darkmode-button {
     position: relative;
-    display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     overflow: hidden;
     width: 4.9rem;
     height: 3rem;
