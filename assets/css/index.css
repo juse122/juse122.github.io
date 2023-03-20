@@ -91,6 +91,7 @@ ul {
   display: flex;
   flex-flow: column nowrap;
   gap: 5rem;
+  padding: 0 env(safe-area-inset-right) 5rem env(safe-area-inset-left);
 }
 
 .subpage-main-header {
@@ -99,7 +100,25 @@ ul {
   text-align: center;
 }
 
+.footer-btt-button {
+  position: absolute;
+  bottom: 5.2rem;
+  right: 1rem;
+}
+.footer-btt-button a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+  font-size: 1.6rem;
+}
+
 .footer-wrapper {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;

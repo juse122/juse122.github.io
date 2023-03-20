@@ -91,6 +91,7 @@ ul {
   display: flex;
   flex-flow: column nowrap;
   gap: 5rem;
+  padding: 0 env(safe-area-inset-right) 5rem env(safe-area-inset-left);
 }
 
 .subpage-main-header {
@@ -99,7 +100,25 @@ ul {
   text-align: center;
 }
 
+.footer-btt-button {
+  position: absolute;
+  bottom: 5.2rem;
+  right: 1rem;
+}
+.footer-btt-button a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+  font-size: 1.6rem;
+}
+
 .footer-wrapper {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -179,10 +198,10 @@ ul {
 
 .projects-main-wrapper {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 7rem;
 }
 
 .projects-main-showcase-wrapper {
@@ -205,7 +224,7 @@ ul {
   border-radius: 1rem;
 }
 .projects-main-showcase-banner img {
-  width: 80%;
+  width: 75%;
 }
 
 .projects-main-showcase-text {
@@ -234,12 +253,12 @@ ul {
   gap: 0.5rem;
   margin-bottom: 1.5rem;
 }
-.projects-main-showcase-text-buttons button {
+.projects-main-showcase-text-buttons div {
   background-color: var(--secondary-bg);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
-.projects-main-showcase-text-buttons button:first-child {
+.projects-main-showcase-text-buttons div:first-child {
   font-weight: 600;
   color: #003264;
   background-color: #ffd700;
