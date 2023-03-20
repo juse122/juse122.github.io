@@ -100,23 +100,6 @@ ul {
   text-align: center;
 }
 
-.footer-btt-button {
-  position: absolute;
-  bottom: 5.2rem;
-  right: 1rem;
-}
-.footer-btt-button a {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 4.2rem;
-  height: 4.2rem;
-  background-color: var(--secondary-bg);
-  border-radius: 50%;
-  font-size: 1.6rem;
-}
-
 .footer-wrapper {
   position: relative;
   display: flex;
@@ -132,6 +115,23 @@ ul {
   font-size: 1.4rem;
   font-weight: 400;
   padding: 1.4rem 0;
+}
+
+.footer-btt-button {
+  position: absolute;
+  bottom: calc(5.2rem + env(safe-area-inset-bottom));
+  right: calc(1rem + env(safe-area-inset-right));
+}
+.footer-btt-button a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+  font-size: 1.6rem;
 }
 
 .footer-darkmode-wrapper {
@@ -261,7 +261,18 @@ ul {
 .projects-main-showcase-text-buttons div:first-child {
   font-weight: 600;
   color: #003264;
-  background-color: #ffd700;
+}
+
+#project-1 {
+  background-color: #fc5c65;
+}
+
+#project-2 {
+  background-color: #fed330;
+}
+
+#project-3 {
+  background-color: #26de81;
 }
 
 .projects-main-showcase-text-link {
