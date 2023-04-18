@@ -4,70 +4,78 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#001e3c" />
-    <meta name="msapplication-navbutton-color" content="#001e3c">
+    <meta name="theme-color" content="#afc6ff" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <meta name="description" content="Hello, I'm juse122, a software developer from Berlin." />
     <meta name="author" content="juse122" />
-    <title>Contact - juse122</title>
+    <title>About - juse122</title>
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
 
     <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/script.js"></script>
 </head>
 
 <body>
+    <div class="subpage-container">
+        <div class="subpage-wrapper">
 
-    <div class="page-container subpages-wrapper">
-        <div class="content-wrapper subpages-wrapper">
-
-            <header class="header">
-                <nav class="nav-wrapper">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                    </ul>
-                </nav>
-                <section class="header-wrapper">
-                    <h1 class="headline-head">Contact</h1>
-                    <h2 class="headline-sub">Got a question? Send me a message!</h2>
+            <header>
+                <section class="subpage-header-wrapper">
+                    <nav class="subpage-nav-wrapper">
+                        <ul class="subpage-nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html" id="active">Contact</a></li>
+                        </ul>
+                    </nav>
                 </section>
             </header>
 
-            <main class="main">
-                <section class="main-wrapper">
-                    <div class="main-contact-wrapper">
-                        <article class="main-contact">
-                            <form class="main-contact-form" action="https://formspree.io/f/xvonavvw" method="post">
-                                <label class="block label" for="name">Full name</label>
-                                <input class="block input" type="text" name="name" id="name" placeholder="Jane Doe" required>
-                                <label class="block label" for="email">Email</label>
-                                <input class="block input" type="email" name="email" id="email" placeholder="jane.doe@gmail.com" required>
-                                <label class="block label" for="textarea">Message</label>
-                                <textarea class="block input textarea" name="message" id="textarea" rows="8" placeholder="I am groot!" required></textarea>
-                                <div class="submit-wrapper">
-                                    <input class="submit" type="submit" value="Send">
-                                </div>
-                            </form>
-                        </article>
+            <main>
+                <section class="subpage-main-wrapper">
+                    <div class="subpage-main-header">
+                        <h1>Contact</h1>
+                        <h2>Got a question? Send me a message!</h2>
                     </div>
+                    <section class="contact-main-wrapper">
+                        <form class="contact-main-form" action="https://formspree.io/f/xvonavvw" method="post">
+                            <label class="block label" for="name">Full name</label>
+                            <input class="block input" type="text" name="name" id="name" placeholder="Jane Doe" required>
+                            <label class="block label" for="email">Email</label>
+                            <input class="block input" type="email" name="email" id="email" placeholder="jane.doe@gmail.com" required>
+                            <label class="block label" for="textarea">Message</label>
+                            <textarea class="block input textarea" name="textarea" id="textarea" rows="8" placeholder="I am groot!" required></textarea>
+                            <div class="contact-main-form-submit-wrapper">
+                                <input class="submit" type="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </section>
                 </section>
             </main>
 
-            <footer class="footer">
+            <footer>
                 <section class="footer-wrapper">
-                    <a href="#" class="footer-btt"><i class="fa-solid fa-caret-up fa-lg"></i><span>Back to top</span></a>
+                    <div class="footer-btt-button">
+                        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                    <p class="footer-text">© <span id="current-year"></span> juse122</p>
+                    <div class="footer-darkmode-wrapper">
+                        <p class="footer-darkmode-light">Light</p>
+                        <div class="footer-darkmode-button">
+                            <input type="checkbox" class="footer-darkmode-switch" id="footer-darkmode-switch" />
+                        </div>
+                        <p class="footer-darkmode-dark">Dark</p>
+                    </div>
                 </section>
             </footer>
 
         </div>
     </div>
-
 </body>
 
 </html>

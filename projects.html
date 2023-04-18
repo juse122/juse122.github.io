@@ -22,12 +22,13 @@
 <body>
     <div class="subpage-container">
         <div class="subpage-wrapper">
+
             <header>
                 <section class="subpage-header-wrapper">
                     <nav class="subpage-nav-wrapper">
                         <ul class="subpage-nav-list">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html" class="active">Projects</a></li>
+                            <li><a href="projects.html" id="active">Projects</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -43,7 +44,7 @@
                     <section class="projects-main-wrapper">
                         <article class="projects-main-showcase-wrapper">
                             <div>
-                                <a href="https://www.lighttouch-institut.de" target="_blank" class="projects-main-showcase-banner"><img src="assets/img/lighttouch.png" alt="lighttouch-banner" /></a>
+                                <a href="#" target="_blank" class="projects-main-showcase-banner"><img src="assets/img/lighttouch.png" alt="lighttouch-banner" /></a>
                             </div>
                             <div class="projects-main-showcase-text">
                                 <h2>Light-Touch Institut</h2>
@@ -51,18 +52,18 @@
                                 <div class="projects-main-showcase-text-buttons">
                                     <div id="red">5%</div>
                                     <div>HTML</div>
-                                    <div>SCSS</div>
+                                    <div>SASS</div>
                                     <div>JavaScript</div>
                                 </div>
                                 <p>Mobile-first, responsive, onepager layout, dropdown menus and tabs, Google reviews implementation, contact form</p>
                                 <div class="projects-main-showcase-text-link">
-                                    <a href="https://www.lighttouch-institut.de" target="_blank"><span>View project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="#" target="_blank"><span>View project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
                         </article>
                         <article class="projects-main-showcase-wrapper">
                             <div>
-                                <a href="https://www.ggcards.de" target="_blank" class="projects-main-showcase-banner"><img
+                                <a href="#" target="_blank" class="projects-main-showcase-banner"><img
                                         src="assets/img/ggcards.png" alt="ggcards-banner" /></a>
                             </div>
                             <div class="projects-main-showcase-text">
@@ -71,12 +72,12 @@
                                 <div class="projects-main-showcase-text-buttons">
                                     <div id="yellow">15%</div>
                                     <div>HTML</div>
-                                    <div>SCSS</div>
+                                    <div>SASS</div>
                                     <div>JavaScript</div>
                                 </div>
                                 <p>Mobile-first, responsive, onepager layout, background calculations on input, settings submenu to change functions</p>
                                 <div class="projects-main-showcase-text-link">
-                                    <a href="https://www.ggcards.de" target="_blank"><span>View project</span><i
+                                    <a href="#" target="_blank"><span>View project</span><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
@@ -98,7 +99,7 @@
                                     <div class="projects-main-showcase-text-buttons">
                                         <div id="green">75%</div>
                                         <div>HTML</div>
-                                        <div>SCSS</div>
+                                        <div>SASS</div>
                                         <div>JavaScript</div>
                                     </div>
                                 </div>
@@ -118,7 +119,7 @@
                                     <div class="projects-main-showcase-text-buttons">
                                         <div id="red">0%</div>
                                         <div>HTML</div>
-                                        <div>SCSS</div>
+                                        <div>SASS</div>
                                         <div>JavaScript</div>
                                     </div>
                                 </div>
@@ -130,12 +131,13 @@
                     </section>
                 </section>
             </main>
+
             <footer>
                 <section class="footer-wrapper">
                     <div class="footer-btt-button">
                         <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
                     </div>
-                    <p class="footer-text">© 2023 juse122</p>
+                    <p class="footer-text">© <span id="current-year"></span> juse122</p>
                     <div class="footer-darkmode-wrapper">
                         <p class="footer-darkmode-light">Light</p>
                         <div class="footer-darkmode-button">
@@ -145,6 +147,7 @@
                     </div>
                 </section>
             </footer>
+
         </div>
     </div>
 </body>

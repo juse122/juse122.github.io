@@ -56,8 +56,13 @@ ul {
   align-items: center;
 }
 
+.subpage-wrapper {
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .subpage-header-wrapper {
-  padding: 1rem 0 4rem 0;
+  padding: 1rem 0 3.7rem 0;
 }
 
 .subpage-nav-list {
@@ -69,14 +74,15 @@ ul {
 }
 .subpage-nav-list li a {
   display: inline-block;
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
 }
 
-.active {
+#active {
+  padding-bottom: 0.6rem;
   border-bottom: 0.2rem solid var(--primary-text);
 }
 
@@ -89,6 +95,11 @@ ul {
   font-size: 3.2rem;
   font-weight: 600;
   text-align: center;
+}
+.subpage-main-header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .footer-wrapper {

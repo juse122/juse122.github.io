@@ -187,104 +187,148 @@ ul {
   transform: translateX(100%) rotate(50deg);
 }
 
-.index-page-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-@media (orientation: landscape) and (max-height: 450px) {
-  .index-page-container {
-    padding-top: 0.1rem;
-  }
-}
-.index-wrapper, .index-header-wrapper, .index-header-avatar-wrapper, .index-main-wrapper, .index-main-list, .index-main-list > li, .index-social-wrapper, .index-social-list, .index-social-list > li > a {
+.about-main-wrapper, .about-main-upper-wrapper, .about-main-imgtext-wrapper, .about-main-qa-wrapper, .about-main-qa-entry, .about-main-lower-wrapper, .about-main-skills-subheader, .about-main-skills-wrapper, .about-main-skills-progress, .about-main-skills-entry-wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.index-wrapper {
-  gap: 4rem;
-  width: 100%;
-  height: calc(100% - (4.2rem + env(safe-area-inset-bottom)));
-  padding: env(safe-area-inset-right) env(safe-area-inset-left);
+.about-main-wrapper {
+  gap: 5rem;
 }
 
-.index-header-wrapper {
-  gap: 0.8rem;
+.about-main-upper-wrapper {
+  flex-flow: row wrap;
+  gap: 5rem;
 }
 
-.index-header-avatar-wrapper {
-  flex-flow: row nowrap;
-  width: 12rem;
-  height: 12rem;
+.about-main-imgtext-wrapper {
+  gap: 2rem;
+}
+
+.about-main-img-wrapper {
+  width: 20rem;
+  height: 20rem;
+}
+.about-main-img-wrapper img {
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  background-color: #fff;
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-.index-header-avatar-wrapper .index-header-avatar {
-  width: 8rem;
-  height: 8rem;
 }
 
-.index-header-h1 {
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-
-.index-header-h2 {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.index-main-wrapper {
-  gap: 3rem;
-}
-
-.index-main-list {
-  gap: 0.7rem;
-}
-.index-main-list li a {
-  display: block;
-  height: 4.7rem;
+.about-main-header {
   font-size: 2.7rem;
   font-weight: 600;
-  line-height: 4.7rem;
-}
-.index-main-list li a:hover {
-  border-bottom: 0.3rem solid var(--primary-text);
 }
 
-.index-social-list {
+.about-main-qa-wrapper {
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 30rem;
+}
+
+.about-main-qa-entry {
   flex-flow: row nowrap;
-  gap: 0.7rem;
-}
-.index-social-list li {
-  display: block;
-  height: 4.8rem;
-  margin: 0 0.7rem;
-}
-.index-social-list li:hover {
-  border-bottom: 0.3rem solid var(--primary-text);
-}
-.index-social-list li a {
-  width: 3rem;
-  height: 4.8rem;
+  gap: 1rem;
 }
 
-@media (orientation: landscape) {
-  .index-wrapper {
-    flex-flow: row nowrap;
-    gap: 7rem;
-  }
-  .index-main-wrapper {
-    gap: 1.5rem;
-  }
+.about-main-q {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-/*# sourceMappingURL=index.css.map */
+.about-main-a {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.about-main-lower-wrapper {
+  gap: 5rem;
+}
+
+.about-main-skills-subheader {
+  gap: 2rem;
+  padding-top: 2.2rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.divider {
+  width: 10rem;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: var(--primary-text);
+}
+
+.about-main-skills-wrapper {
+  gap: 5rem;
+}
+
+.about-main-skills-progress {
+  gap: 1.5rem;
+}
+
+.about-main-skills-entry-wrapper {
+  position: relative;
+  align-items: flex-start;
+  background-color: var(--secondary-bg);
+  width: 30rem;
+  height: 3.4rem;
+  border-radius: 3.4rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.about-main-skills-entry {
+  height: 2.4rem;
+  border-radius: 1.2rem 0.4rem 0.4rem 1.2rem;
+}
+
+.about-main-skills-entry-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.html {
+  width: 90%;
+  background-color: #f16529;
+}
+.html + p {
+  color: #003264;
+}
+
+.css {
+  width: 90%;
+  background-color: #2965f1;
+}
+.css + p {
+  color: #003264;
+}
+
+.js {
+  width: 70%;
+  background-color: #f0db4f;
+}
+.js + p {
+  color: #003264;
+}
+
+.react {
+  width: 5%;
+  background-color: #61dbfb;
+}
+
+.about-main-skills-focus {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.about-main-skills-focus .bold {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=about.css.map */
