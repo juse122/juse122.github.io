@@ -17,6 +17,7 @@
     --dark-mode-light: #003264;
     --dark-mode-dark: #00326433;
     --dark-mode-bg: #afc6ff;
+    --disabled: #0002;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
     font-size: 62.5%;
@@ -32,6 +33,7 @@
     --dark-mode-light: #afc6ff33;
     --dark-mode-dark: #afc6ff;
     --dark-mode-bg: #003264;
+    --disabled: #0004;
 }
 
 html, body {
@@ -92,8 +94,8 @@ ul {
 }
 
 .subpage-main-wrapper {
-    gap: 5rem;
-    padding: 0 env(safe-area-inset-right) 7rem env(safe-area-inset-left);
+    gap: 6rem;
+    padding: 0 env(safe-area-inset-right) 8rem env(safe-area-inset-left);
 }
 
 .subpage-main-header {
