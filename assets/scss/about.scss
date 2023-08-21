@@ -126,7 +126,7 @@
 }
 
 .js {
-    width: 70%;
+    width: 90%;
     background-color: #f0db4f;
 
     + p {
@@ -135,8 +135,32 @@
 }
 
 .react {
-    width: 5%;
+    width: 80%;
     background-color: #61dbfb;
+
+    + p {
+        color: #003264;
+    }
+}
+
+.node {
+    width: 40%;
+    background-color: #43853d;
+}
+
+.express {
+    width: 20%;
+    background-color: #fff;
+}
+
+.mongo {
+    width: 5%;
+    background-color: #00ed64;
+}
+
+.git {
+    width: 40%;
+    background-color: #f14e32;
 }
 
 .about-main-skills-focus {

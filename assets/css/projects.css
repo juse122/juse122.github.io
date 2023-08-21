@@ -201,7 +201,7 @@ ul {
   background-color: #26de81;
 }
 
-.projects-main-wrapper, .projects-main-showcase-wrapper, .projects-main-showcase-banner, .projects-main-showcase-text, .projects-main-showcase-text-buttons, .projects-main-showcase-text-link, .projects-main-showcase-text-link > a, .projects-main-subheader, .projects-main-wrapper-small, .projects-main-showcase-wrapper-small, .projects-main-showcase-imgtext-wrapper-small, .projects-main-showcase-image-small {
+.projects-main-wrapper, .projects-main-showcase-wrapper, .projects-main-showcase-banner, .projects-main-showcase-banner > a, .projects-main-showcase-text, .projects-main-showcase-text-buttons, .projects-main-showcase-text-link, .projects-main-showcase-text-link > a, .projects-main-subheader, .projects-main-wrapper-small, .projects-main-showcase-wrapper-small, .projects-main-showcase-imgtext-wrapper-small, .projects-main-showcase-image-small {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -210,19 +210,25 @@ ul {
 
 .projects-main-wrapper {
   flex-flow: row wrap;
+  align-items: flex-start;
   gap: 6rem;
 }
 
 .projects-main-showcase-wrapper {
   gap: 2rem;
-  max-width: 30rem;
+  width: calc(100% - 6.4rem);
+  max-width: 36rem;
 }
 
 .projects-main-showcase-banner {
   width: 100%;
   height: 15rem;
   background-color: #fff;
-  border-radius: 2rem;
+  border-radius: 1.6rem;
+}
+.projects-main-showcase-banner a {
+  width: 100%;
+  height: 100%;
 }
 .projects-main-showcase-banner img {
   width: 70%;
@@ -248,7 +254,8 @@ ul {
 }
 
 .projects-main-showcase-text-buttons {
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -294,12 +301,14 @@ ul {
 
 .projects-main-wrapper-small {
   flex-flow: row wrap;
+  width: 100%;
   gap: 6rem;
 }
 
 .projects-main-showcase-wrapper-small {
   align-items: flex-start;
-  width: 30rem;
+  width: calc(100% - 6.4rem);
+  max-width: 36rem;
   gap: 0.5rem;
 }
 
