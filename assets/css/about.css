@@ -11,6 +11,7 @@
 :root {
   --primary-bg: #afc6ff;
   --secondary-bg: #fff3;
+  --bg-hover: #fff6;
   --primary-text: #003264;
   --secondary-text: #00326488;
   --dark-mode-light: #003264;
@@ -25,6 +26,7 @@
 .dark-mode {
   --primary-bg: #003264;
   --secondary-bg: #fff1;
+  --bg-hover: #0002;
   --primary-text: #afc6ff;
   --secondary-text: #afc6ff88;
   --dark-mode-light: #afc6ff33;
@@ -82,6 +84,10 @@ ul {
   text-transform: uppercase;
   line-height: 1;
 }
+.subpage-nav-list li a:hover {
+  padding-bottom: 0.6rem;
+  border-bottom: 0.2rem solid var(--primary-text);
+}
 
 #active {
   padding-bottom: 0.6rem;
@@ -130,6 +136,10 @@ ul {
   background-color: var(--secondary-bg);
   border-radius: 50%;
   font-size: 1.6rem;
+  transition: background-color 0.2s;
+}
+.footer-btt-button a:hover {
+  background-color: var(--bg-hover);
 }
 
 .footer-darkmode-wrapper {
@@ -328,22 +338,22 @@ ul {
 }
 
 .node {
-  width: 40%;
+  width: 35%;
   background-color: #43853d;
 }
 
 .express {
-  width: 20%;
+  width: 30%;
   background-color: #fff;
 }
 
 .mongo {
-  width: 5%;
+  width: 20%;
   background-color: #00ed64;
 }
 
 .git {
-  width: 40%;
+  width: 35%;
   background-color: #f14e32;
 }
 

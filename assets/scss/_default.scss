@@ -9,9 +9,9 @@
 }
 
 :root {
-    // --primary-bg: linear-gradient(-10deg, #6432c8, #5a78ff 30%, #5ac8ff 85%);
     --primary-bg: #afc6ff;
     --secondary-bg: #fff3;
+    --bg-hover: #fff6;
     --primary-text: #003264;
     --secondary-text: #00326488;
     --dark-mode-light: #003264;
@@ -25,9 +25,9 @@
 }
 
 .dark-mode {
-    // --primary-bg: linear-gradient(-10deg, #001e3c 10%, #003c78 85%);
     --primary-bg: #003264;
     --secondary-bg: #fff1;
+    --bg-hover: #0002;
     --primary-text: #afc6ff;
     --secondary-text: #afc6ff88;
     --dark-mode-light: #afc6ff33;
@@ -84,6 +84,11 @@ ul {
             font-weight: 500;
             text-transform: uppercase;
             line-height: 1;
+
+            &:hover {
+                padding-bottom: 0.6rem;
+                border-bottom: 0.2rem solid var(--primary-text);
+            }
         }
     }
 }
@@ -137,6 +142,11 @@ ul {
         background-color: var(--secondary-bg);
         border-radius: 50%;
         font-size: 1.6rem;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: var(--bg-hover);
+        }
     }
 }
 

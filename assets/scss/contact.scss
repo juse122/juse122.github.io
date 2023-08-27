@@ -62,4 +62,10 @@
     border-radius: 2.5rem;
     border: 0.2rem solid var(--primary-text);
     color: var(--primary-text);
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: var(--bg-hover);
+    }
 }

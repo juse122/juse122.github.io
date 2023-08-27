@@ -96,15 +96,16 @@
         background-color: var(--secondary-bg);
         padding: 1rem 2rem;
         border-radius: 1.8rem;
+        transition: background-color 0.2s;
 
         .fa-arrow-up-right-from-square {
             height: 1.3rem;
         }
-    }
-}
 
-.disabled {
-    color: var(--disabled);
+        &:hover {
+            background-color: var(--bg-hover);
+        }
+    }
 }
 
 .projects-main-subheader {

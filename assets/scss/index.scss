@@ -1,10 +1,13 @@
 @use "default";
 
-.index-page-container {
+.index-page-container, .index-wrapper, .index-header-wrapper, .index-header-avatar-wrapper, .index-main-wrapper, .index-main-list, .index-main-list > li, .index-social-wrapper, .index-social-list, .index-social-list > li > a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.index-page-container {
     height: 100%;
 }
 
@@ -12,13 +15,6 @@
     .index-page-container {
         padding-top: 0.1rem;
     }
-}
-
-.index-wrapper, .index-header-wrapper, .index-header-avatar-wrapper, .index-main-wrapper, .index-main-list, .index-main-list > li, .index-social-wrapper, .index-social-list, .index-social-list > li > a {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .index-wrapper {
