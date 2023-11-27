@@ -1,71 +1,72 @@
 @use "default";
 
-.contact-main-wrapper, .contact-main-form-submit-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.contact-main-wrapper,
+.contact-main-form-submit-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-main-wrapper {
-    width: calc(100vw - 8rem);
-    max-width: 40rem;
+	width: calc(100vw - 8rem);
+	max-width: 40rem;
 }
 
 .contact-main-form {
-    width: 100%;
-    padding: 3rem;
-    background-color: var(--secondary-bg);
-    border-radius: 2rem;
+	width: 100%;
+	padding: 3rem;
+	background-color: var(--secondary-bg);
+	border-radius: 2rem;
 }
 
 .block {
-    display: inline-block;
-    width: 100%;
+	display: inline-block;
+	width: 100%;
 }
 
 .label {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
 }
 
 .input {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 1rem;
-    background-color: var(--secondary-bg);
-    border-radius: 0.5rem;
-    margin-bottom: 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 1rem;
+	background-color: var(--secondary-bg);
+	border-radius: 0.5rem;
+	margin-bottom: 3rem;
 
-    &:focus {
-        outline: 0.1rem solid var(--primary-text);
-    }
+	&:focus {
+		outline: 0.1rem solid var(--primary-text);
+	}
 }
 
 ::placeholder {
-    color: var(--primary-text);
-    opacity: 0.25;
+	color: var(--primary-text);
+	opacity: 0.25;
 }
 
 .textarea {
-    overflow-wrap: anywhere;
-    line-height: 1.5;
+	overflow-wrap: anywhere;
+	line-height: 1.5;
 }
 
 .submit {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1.5rem 2.5rem;
-    text-transform: uppercase;
-    background-color: var(--secondary-bg);
-    border-radius: 2.5rem;
-    border: 0.2rem solid var(--primary-text);
-    color: var(--primary-text);
-    cursor: pointer;
-    transition: background-color 0.2s;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1.5rem 2.5rem;
+	text-transform: uppercase;
+	background-color: var(--secondary-bg);
+	border-radius: 2.5rem;
+	border: 0.2rem solid var(--primary-text);
+	color: var(--primary-text);
+	cursor: pointer;
+	transition: background-color 0.2s;
 
-    &:hover {
-        background-color: var(--bg-hover);
-    }
+	&:hover {
+		background-color: var(--bg-hover);
+	}
 }

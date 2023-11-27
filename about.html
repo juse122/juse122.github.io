@@ -1,149 +1,147 @@
 <!DOCTYPE html>
 <html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="theme-color" content="#afc6ff" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#afc6ff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="description" content="Hello, I'm juse122, a software developer from Berlin." />
+		<meta name="author" content="juse122" />
+		<title>About - juse122</title>
 
-    <meta name="description" content="Hello, I'm juse122, a software developer from Berlin." />
-    <meta name="author" content="juse122" />
-    <title>About - juse122</title>
+		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+		<link rel="stylesheet" href="assets/css/about.css" />
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    <link rel="stylesheet" href="assets/css/about.css" />
+		<script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
+		<script type="module" src="assets/js/script.js"></script>
+	</head>
 
-    <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
-    <script type="module" src="assets/js/script.js"></script>
-</head>
+	<body>
+		<div class="subpage-container">
+			<div class="subpage-wrapper">
+				<header>
+					<section class="subpage-header-wrapper">
+						<nav class="subpage-nav-wrapper">
+							<ul class="subpage-nav-list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li>
+									<a href="about.html" id="active">About</a>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</section>
+				</header>
 
-<body>
-    <div class="subpage-container">
-        <div class="subpage-wrapper">
+				<main>
+					<section class="subpage-main-wrapper">
+						<div class="subpage-main-header">
+							<h1>About</h1>
+						</div>
+						<section class="about-main-wrapper">
+							<section class="about-main-upper-wrapper">
+								<div class="about-main-imgtext-wrapper">
+									<div class="about-main-img-wrapper">
+										<img src="assets/img/moi.jpeg" alt="juse122" />
+									</div>
+									<h2 class="about-main-header">Hello, that's me.</h2>
+								</div>
+								<div class="about-main-qa-wrapper">
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Name:</p>
+										<p class="about-main-a">Julius</p>
+									</div>
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Age:</p>
+										<p id="current-age" class="about-main-a"></p>
+									</div>
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Location:</p>
+										<p class="about-main-a">Berlin, Germany</p>
+									</div>
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Likes:</p>
+										<p class="about-main-a">Video games, anime, calisthenics</p>
+									</div>
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Favorite food:</p>
+										<p class="about-main-a">All pancake variations</p>
+									</div>
+									<div class="about-main-qa-entry">
+										<p class="about-main-q">Favorite drink:</p>
+										<p class="about-main-a">Vanilla Coke</p>
+									</div>
+								</div>
+							</section>
+							<div class="about-main-lower-wrapper">
+								<div class="about-main-skills-subheader">
+									<h2>Web developer skills</h2>
+									<div class="divider"></div>
+								</div>
+								<div class="about-main-skills-wrapper">
+									<div class="about-main-skills-progress">
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry html"></div>
+											<p class="about-main-skills-entry-text">HTML</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry css"></div>
+											<p class="about-main-skills-entry-text">CSS</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry js"></div>
+											<p class="about-main-skills-entry-text">JavaScript</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry react"></div>
+											<p class="about-main-skills-entry-text">React</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry node"></div>
+											<p class="about-main-skills-entry-text">Node.js</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry express"></div>
+											<p class="about-main-skills-entry-text">Express.js</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry mongo"></div>
+											<p class="about-main-skills-entry-text">MongoDB</p>
+										</div>
+										<div class="about-main-skills-entry-wrapper">
+											<div class="about-main-skills-entry git"></div>
+											<p class="about-main-skills-entry-text">Git</p>
+										</div>
+									</div>
+									<div class="about-main-skills-focus">
+										<p class="bold">Current focus:</p>
+										<p>Internship @ Micropayment GmbH until 01/2024</p>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+				</main>
 
-            <header>
-                <section class="subpage-header-wrapper">
-                    <nav class="subpage-nav-wrapper">
-                        <ul class="subpage-nav-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html" id="active">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </header>
-    
-            <main>
-                <section class="subpage-main-wrapper">
-                    <div class="subpage-main-header">
-                        <h1>About</h1>
-                    </div>
-                    <section class="about-main-wrapper">
-                        <section class="about-main-upper-wrapper">
-                            <div class="about-main-imgtext-wrapper">
-                                <div class="about-main-img-wrapper">
-                                    <img src="assets/img/moi.jpeg" alt="juse122" />
-                                </div>
-                                <h2 class="about-main-header">Hello, that's me.</h2>
-                            </div>
-                            <div class="about-main-qa-wrapper">
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Name:</p>
-                                    <p class="about-main-a">Julius</p>
-                                </div>
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Age:</p>
-                                    <p id="current-age" class="about-main-a"></p>
-                                </div>
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Location:</p>
-                                    <p class="about-main-a">Berlin, Germany</p>
-                                </div>
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Likes:</p>
-                                    <p class="about-main-a">Video games, anime, calisthenics</p>
-                                </div>
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Favorite food:</p>
-                                    <p class="about-main-a">All pancake variations</p>
-                                </div>
-                                <div class="about-main-qa-entry">
-                                    <p class="about-main-q">Favorite drink:</p>
-                                    <p class="about-main-a">Vanilla Coke</p>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="about-main-lower-wrapper">
-                            <div class="about-main-skills-subheader">
-                                <h2>Web developer skills</h2>
-                                <div class="divider"></div>
-                            </div>
-                            <div class="about-main-skills-wrapper">
-                                <div class="about-main-skills-progress">
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry html"></div>
-                                        <p class="about-main-skills-entry-text">HTML</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry css"></div>
-                                        <p class="about-main-skills-entry-text">CSS</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry js"></div>
-                                        <p class="about-main-skills-entry-text">JavaScript</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry react"></div>
-                                        <p class="about-main-skills-entry-text">React</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry node"></div>
-                                        <p class="about-main-skills-entry-text">Node.js</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry express"></div>
-                                        <p class="about-main-skills-entry-text">Express.js</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry mongo"></div>
-                                        <p class="about-main-skills-entry-text">MongoDB</p>
-                                    </div>
-                                    <div class="about-main-skills-entry-wrapper">
-                                        <div class="about-main-skills-entry git"></div>
-                                        <p class="about-main-skills-entry-text">Git</p>
-                                    </div>
-                                </div>
-                                <div class="about-main-skills-focus">
-                                    <p class="bold">Current focus:</p>
-                                    <p>MERN stack course @ DCI until 01/2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </main>
-
-            <footer>
-                <section class="footer-wrapper">
-                    <div class="footer-btt-button">
-                        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-                    </div>
-                    <p class="footer-text">© <span id="current-year"></span> juse122</p>
-                    <div class="footer-darkmode-wrapper">
-                        <p class="footer-darkmode-light">Light</p>
-                        <div class="footer-darkmode-button">
-                            <input type="checkbox" class="footer-darkmode-switch" id="footer-darkmode-switch" />
-                        </div>
-                        <p class="footer-darkmode-dark">Dark</p>
-                    </div>
-                </section>
-            </footer>
-
-        </div>
-    </div>
-</body>
-
+				<footer>
+					<section class="footer-wrapper">
+						<div class="footer-btt-button">
+							<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+						</div>
+						<p class="footer-text">© <span id="current-year"></span> juse122</p>
+						<div class="footer-darkmode-wrapper">
+							<p class="footer-darkmode-light">Light</p>
+							<div class="footer-darkmode-button">
+								<input type="checkbox" class="footer-darkmode-switch" id="footer-darkmode-switch" />
+							</div>
+							<p class="footer-darkmode-dark">Dark</p>
+						</div>
+					</section>
+				</footer>
+			</div>
+		</div>
+	</body>
 </html>

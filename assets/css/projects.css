@@ -35,7 +35,8 @@
   --disabled: #0004;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -53,7 +54,14 @@ ul {
   list-style: none;
 }
 
-.subpage-container, .subpage-wrapper, .subpage-nav-list, .subpage-main-wrapper, .footer-wrapper, .footer-btt-button > a, .footer-darkmode-wrapper, .footer-darkmode-button {
+.subpage-container,
+.subpage-wrapper,
+.subpage-nav-list,
+.subpage-main-wrapper,
+.footer-wrapper,
+.footer-btt-button > a,
+.footer-darkmode-wrapper,
+.footer-darkmode-button {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -61,6 +69,7 @@ ul {
 }
 
 .subpage-wrapper {
+  width: 100%;
   height: 100vh;
   justify-content: space-between;
 }
@@ -110,10 +119,14 @@ ul {
   margin-top: 1rem;
 }
 
+footer {
+  width: 100%;
+}
+
 .footer-wrapper {
   position: relative;
   flex-flow: row nowrap;
-  width: 100vw;
+  width: 100%;
   background-color: var(--secondary-bg);
   padding-bottom: env(safe-area-inset-bottom);
   gap: 3rem;
@@ -211,7 +224,19 @@ ul {
   background-color: #26de81;
 }
 
-.projects-main-wrapper, .projects-main-showcase-wrapper, .projects-main-showcase-banner, .projects-main-showcase-banner > a, .projects-main-showcase-text, .projects-main-showcase-text-buttons, .projects-main-showcase-text-link, .projects-main-showcase-text-link > a, .projects-main-subheader, .projects-main-wrapper-small, .projects-main-showcase-wrapper-small, .projects-main-showcase-imgtext-wrapper-small, .projects-main-showcase-image-small {
+.projects-main-wrapper,
+.projects-main-showcase-wrapper,
+.projects-main-showcase-banner,
+.projects-main-showcase-banner > a,
+.projects-main-showcase-text,
+.projects-main-showcase-text-buttons,
+.projects-main-showcase-text-link,
+.projects-main-showcase-text-link > a,
+.projects-main-subheader,
+.projects-main-wrapper-small,
+.projects-main-showcase-wrapper-small,
+.projects-main-showcase-imgtext-wrapper-small,
+.projects-main-showcase-image-small {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -222,11 +247,12 @@ ul {
   flex-flow: row wrap;
   align-items: flex-start;
   gap: 6rem;
+  padding: 0 4rem;
 }
 
 .projects-main-showcase-wrapper {
   gap: 2rem;
-  width: calc(100% - 6.4rem);
+  width: 100%;
   max-width: 36rem;
 }
 
