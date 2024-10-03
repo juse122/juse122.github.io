@@ -278,7 +278,7 @@ footer {
 }
 
 .about-main-lower-wrapper {
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .about-main-skills-subheader {
@@ -300,6 +300,7 @@ footer {
 }
 
 .about-main-skills-progress {
+  font-size: 2rem;
   gap: 1.5rem;
 }
 
